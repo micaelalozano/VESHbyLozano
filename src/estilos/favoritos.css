@@ -1,0 +1,52 @@
+.car-contenedor {
+    width: 100%;
+    height: 80vh; /*{cuando lo filmes para linkedin ponelo mas chico asi se ve mejor en el video y foto}*/
+    position: relative;
+  }
+  
+  .car-contenedor1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hijo2 {
+    font-size: small;
+  }
+  
+  .icon {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+    margin-top: 4px;
+    margin-left: 7px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    float: right;
+    color: tan;
+  }
+  
+  .icon1 {
+      font-family: "Material Icons";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 17px;
+      margin-top: 4px;
+      margin-right: 7px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      float: left;
+      color: tan;
+    }

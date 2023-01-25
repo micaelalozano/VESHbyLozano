@@ -1,0 +1,34 @@
+.contenedor-dos {
+    background-color: tan;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: 0px;
+  }
+  
+  .header-menu-dos {
+    display: flex;
+  }
+  
+  .header-menu-dos li {
+    padding: 0 0.5rem;
+  }
+  
+  .header-menu-dos li a {
+    font-weight: 300;
+    color: #222;
+  }
+  
+  .header-menu-dos li a:hover {
+    color: white;
+    transition: all 0.2s ease;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .contenedor-dos {
+      padding-right: 0.5rem;
+    }
+  }
+  

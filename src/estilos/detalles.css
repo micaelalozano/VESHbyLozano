@@ -1,0 +1,176 @@
+.detalle-container {
+    max-width: 100%;
+    margin-bottom: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .left-detalle {
+    margin-left: 10%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+  
+  .right-detalle {
+    width: 90%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .producto-name {
+    text-transform: uppercase;
+  }
+  
+  .producto-precio {
+    margin-bottom: 1rem;
+  }
+  
+  .producto-des {
+    margin-bottom: 1rem;
+  }
+  
+  .producto-talle {
+    margin-bottom: 1rem;
+  }
+  
+  .pago {
+    margin-top: 1rem;
+    color: black;
+  }
+  
+  .metodo {
+    margin-top: 0.5rem;
+    font-size: small;
+  }
+  
+  .btn-contenedor {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .btn-cart {
+    margin: 3px;
+    padding: 5px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    background: #222;
+    color: tan;
+    border: 2px solid tan;
+  }
+  
+  .btn-cart:hover {
+    margin: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: white;
+    color: #333;
+    border-style: initial;
+    border-bottom: 2px solid #222;
+    background: white;
+  }
+  
+  .icon-cart {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 3px;
+    margin-right: 3px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    float: left;
+  }
+  
+  .btn-fav {
+    margin: 3px;
+    padding: 5px 7px;
+    cursor: pointer;
+    background: white;
+    color: #333;
+    border: 2px solid #333;
+  }
+  
+  .btn-fav:hover {
+    margin: 3px;
+    padding: 5px 7px;
+    cursor: pointer;
+    background: white;
+    color: firebrick;
+    border-style: initial;
+    border-bottom: 2px solid #222;
+    background: white;
+  }
+  
+  .icon-fav {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 3px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    float: left;
+  }
+  
+  .btn-fav {
+    margin: 3px;
+  }
+  
+  img {
+    width: 100%;
+    box-shadow: 0px 1px 5px rgb(104, 102, 102);
+  }
+  
+  hr {
+    color: lightgray;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .detalle-container {
+      grid-template-columns: 1fr;
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      margin-bottom: 3rem;
+    }
+  
+    .left-detalle {
+      width: 100%;
+      margin: auto;
+    }
+  
+    .right-detalle {
+      width: 95%;
+      margin: auto;
+      box-shadow: 0px 1px 5px rgb(104, 102, 102);
+    }
+  
+    .producto-name {
+      text-transform: uppercase;
+      font-size: x-large;
+    }
+  
+    .producto-des {
+      font-size: 14px;
+    }
+  }
+  
