@@ -14,10 +14,7 @@ const PantalonesList = () => {
 
   useEffect(() => {
     axios
-      .get("/api/productos", {
-        withCredentials: true,
-        credentials: "include",
-      })
+      .get("/api/productos")
       .then((res) => res.data)
       .then((productos) => {
         setProductos(productos);

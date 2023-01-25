@@ -14,10 +14,7 @@ const VestidosList = () => {
 
   useEffect(() => {
     axios
-      .get("https://veshbymicaelalozano.onrender.com/api/productos", {
-        withCredentials: true,
-        credentials: "include",
-      })
+      .get("/api/productos")
       .then((res) => res.data)
       .then((productos) => {
         setProductos(productos);
