@@ -23,12 +23,12 @@ const SweaterList = () => {
   }, []);
 
   //Filtrar clase de producto:
-  let sweaters = [];
+/* { let sweaters = [];
   for (let i = 0; i < productos.length; i++) {
     if (productos[i].clase === "Sweater") {
       sweaters.push(productos[i]);
     }
-  }
+  }}*/
   ////////////////////////////////////////////
 
   return (
@@ -38,7 +38,7 @@ const SweaterList = () => {
       <Buscador />
       <ul>
         <div className="card-container">
-          {sweaters.map(function (e, i) {
+          {productos.map(function (e, i) {
             return (
               <li key={i}>
                 <Link to={"/producto_detalles/" + e.id}>
