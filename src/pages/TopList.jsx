@@ -14,7 +14,7 @@ const TopList = () => {
 
   useEffect(() => {
     axios
-      .get("/api/productos")
+      .get("https://veshbymicaelalozano.onrender.com/api/productos")
       .then((res) => res.data)
       .then((productos) => {
         setProductos(productos);

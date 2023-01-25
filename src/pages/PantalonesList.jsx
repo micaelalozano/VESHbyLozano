@@ -14,13 +14,15 @@ const PantalonesList = () => {
 
   useEffect(() => {
     axios
-      .get("/api/productos")
+      .get("https://veshbymicaelalozano.onrender.com/api/productos")
       .then((res) => res.data)
       .then((productos) => {
         setProductos(productos);
       })
       .catch();
   }, []);
+
+  console.log("ver aca",productos);
 
   //Filtrar clase de producto:
   /*{let pantalones = [];
