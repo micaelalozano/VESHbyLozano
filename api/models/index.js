@@ -1,3 +1,4 @@
-const Productos = require("./Productos");
+/*{const Productos = require("./Productos");
 
 module.exports = { Productos };
+}*/

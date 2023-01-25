@@ -1,4 +1,4 @@
-const express = require("express");
+/*{const express = require("express");
 const { Productos } = require("../models");
 const router = express.Router();
 
@@ -47,3 +47,4 @@ router.put("/:id", (req, res) => {
 });
 
 module.exports = router;
+}*/

@@ -14,7 +14,9 @@ const VestidosList = () => {
 
   useEffect(() => {
     axios
-      .get("https://veshbymicaelalozano.onrender.com/api/productos")
+      .get("https://veshbymicaelalozano.onrender.com/api/productos", {
+        withCredentials: true,
+      })
       .then((res) => res.data)
       .then((productos) => {
         setProductos(productos);
@@ -23,7 +25,7 @@ const VestidosList = () => {
   }, []);
 
   //Filtrar clase de producto:
- /*{ let vestidos = [];
+  /*{ let vestidos = [];
   for (let i = 0; i < productos.length; i++) {
     if (productos[i].clase === "Vestido") {
       vestidos.push(productos[i]);

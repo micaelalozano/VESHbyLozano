@@ -14,7 +14,9 @@ const SweaterList = () => {
 
   useEffect(() => {
     axios
-      .get("https://veshbymicaelalozano.onrender.com/api/productos")
+      .get("https://veshbymicaelalozano.onrender.com/api/productos", {
+        withCredentials: true,
+      })
       .then((res) => res.data)
       .then((productos) => {
         setProductos(productos);
@@ -23,7 +25,7 @@ const SweaterList = () => {
   }, []);
 
   //Filtrar clase de producto:
-/* { let sweaters = [];
+  /* { let sweaters = [];
   for (let i = 0; i < productos.length; i++) {
     if (productos[i].clase === "Sweater") {
       sweaters.push(productos[i]);
