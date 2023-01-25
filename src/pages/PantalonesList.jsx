@@ -14,7 +14,9 @@ const PantalonesList = () => {
 
   useEffect(() => {
     axios
-      .get("https://veshbymicaelalozano.onrender.com/api/productos")
+      .get("https://veshbymicaelalozano.onrender.com/api/productos", {
+        withCredentials: true,
+      })
       .then((res) => res.data)
       .then((productos) => {
         setProductos(productos);
@@ -22,7 +24,7 @@ const PantalonesList = () => {
       .catch();
   }, []);
 
-  console.log("ver aca",productos);
+  console.log("ver aca", productos);
 
   //Filtrar clase de producto:
   /*{let pantalones = [];
