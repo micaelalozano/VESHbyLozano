@@ -13,13 +13,7 @@ const Detalles = () => {
 
   useEffect(() => {
     axios
-      .get(
-        `https://veshbymicaelalozano.onrender.com/api/productos/${detalle_id}`,
-        {
-          withCredentials: true,
-          credentials: "include",
-        }
-      )
+      .get(`/api/productos/${detalle_id}`)
       .then((res) => res.data)
       .then((producto) => {
         setProducto(producto);
