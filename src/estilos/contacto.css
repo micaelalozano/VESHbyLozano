@@ -1,0 +1,69 @@
+.contacto-contenedor {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+  }
+  
+  .contacto-contenedor1 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .label {
+    padding-left: 3px;
+    margin-bottom: 0.3rem;
+    color: #333;
+  }
+  
+  .imput-cont {
+    margin-bottom: 0.5rem;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border: tan solid 2px;
+    color: #333;
+  }
+  
+  .about-us {
+    padding-bottom: 15px;
+    color: #333;
+  }
+  
+  .parrafo {
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: dimgray;
+  }
+  
+  .btn-contacto {
+    font-size: medium;
+    padding: 0.8rem 4rem;
+    border-style: initial;
+    color: #333;
+    border-bottom: 3px solid #333;
+    background: white;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  
+  .btn-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .btn-div2 :hover {
+    background: #222;
+    color: tan;
+    border-bottom: 3px solid tan;
+    transition: 0.3s;
+  }

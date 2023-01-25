@@ -1,1 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Poppins:wght@400&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,79 @@
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-size: 280%;
+    margin-top: 5rem;
+  }
+  
+  .form-sesion {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    margin: auto;
+    max-width: 600px;
+  }
+  
+  .label-sesion {
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-sesion {
+    margin-bottom: 1rem;
+    padding: 6px 15px;
+    font-size: smaller;
+    border: tan solid 3px;
+    width: 100%;
+  }
+  
+  .btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .p-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    margin-top: 1rem;
+    color: gray;
+  }
+  
+  .aqui {
+    margin-left: 3px;
+    color: #222;
+    font-weight: bolder;
+  }
+  
+  .btn-sesion {
+    font-size: medium;
+    padding: 0.8rem;
+    border-style: initial;
+    color: #222;
+    border-bottom: 3px solid #222;
+    background: white;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  
+  .btn-div :hover {
+    background: #222;
+    color: tan;
+    border-bottom: 3px solid tan;
+    transition: 0.3s;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .inicio {
+      font-size: 200%;
+      margin-top: 7rem;
+    }
+  
+    .form-sesion {
+      padding: 4rem 1rem;
+    }
+  }
+  
