@@ -14,7 +14,7 @@ const TopList = () => {
 
   useEffect(() => {
     axios
-      .get("https://veshbymicaelalozano.onrender.com/api/productos", {
+      .get("/api/productos", {
         withCredentials: true,
       })
       .then((res) => res.data)
@@ -25,13 +25,12 @@ const TopList = () => {
   }, []);
 
   //Filtrar clase de producto:
-  /*{  let tops = [];
+  let tops = [];
   for (let i = 0; i < productos.length; i++) {
     if (productos[i].clase === "Top") {
       tops.push(productos[i]);
     }
   }
-  console.log(tops);}*/
   ///////////////////////////////////////
 
   return (
@@ -41,7 +40,7 @@ const TopList = () => {
       <Buscador />
       <ul>
         <div className="card-container">
-          {productos.map(function (e, i) {
+          {tops.map(function (e, i) {
             return (
               <li key={i}>
                 <Link to={"/producto_detalles/" + e.id}>
