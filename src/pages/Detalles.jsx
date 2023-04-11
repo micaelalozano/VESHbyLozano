@@ -14,7 +14,7 @@ const Detalles = () => {
   useEffect(() => {
     axios
       .get(
-        `https://veshbymicaelalozano.onrender.com/api/productos/${detalle_id}`,
+        `/api/productos/${detalle_id}`,
         { withCredentials: true }
       )
       .then((res) => res.data)

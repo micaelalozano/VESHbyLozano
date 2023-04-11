@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const db = require("./db");
-//const models = require("./models");
-//const router = require("./routes");
+const models = require("./models");
+const router = require("./routes");
 const cors = require("cors");
 
 app.use(express.static("src"));

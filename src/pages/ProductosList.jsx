@@ -13,7 +13,7 @@ const ProductosList = () => {
 
   useEffect(() => {
     axios
-      .get("https://veshbymicaelalozano.onrender.com/api/productos", {
+      .get("/api/productos", {
         withCredentials: true,
       })
       .then((res) => res.data)

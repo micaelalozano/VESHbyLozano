@@ -14,7 +14,7 @@ const VestidosList = () => {
 
   useEffect(() => {
     axios
-      .get("https://veshbymicaelalozano.onrender.com/api/productos", {
+      .get("/productos", {
         withCredentials: true,
       })
       .then((res) => res.data)

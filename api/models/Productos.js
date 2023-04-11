@@ -1,4 +1,4 @@
-/*{const Sequelize = require("sequelize");
+const Sequelize = require("sequelize");
 const db = require("../db");
 
 class Productos extends Sequelize.Model {}
@@ -34,4 +34,3 @@ Productos.init(
 );
 
 module.exports = Productos;
-}*/
