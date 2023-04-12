@@ -14,7 +14,7 @@ const PantalonesList = () => {
 
   useEffect(() => {
     axios
-      .get("/productos", {
+      .get("/api/productos", {
         withCredentials: true,
       })
       .then((res) => res.data)
@@ -27,12 +27,12 @@ const PantalonesList = () => {
   console.log("ver aca", productos);
 
   //Filtrar clase de producto:
-  /*{let pantalones = [];
+  let pantalones = [];
   for (let i = 0; i < productos.length; i++) {
     if (productos[i].clase === "Pantalon") {
       pantalones.push(productos[i]);
     }
-  }}*/
+  }
   ///////////////////////////////////////
 
   return (
@@ -42,7 +42,7 @@ const PantalonesList = () => {
       <Buscador />
       <ul>
         <div className="card-container">
-          {productos.map(function (e, i) {
+          {pantalones.map(function (e, i) {
             return (
               <li key={i}>
                 <Link to={"/producto_detalles/" + e.id}>
