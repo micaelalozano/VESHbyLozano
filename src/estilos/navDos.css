@@ -1,95 +1,181 @@
 .header-dos {
-    background-color: tan;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    padding-bottom: 1.5rem;
-    border-bottom: solid 2px #222;
-    width: 100%;
-    height: 30px;
+  background-color: tan;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0em;
+  padding-bottom: 1.5rem;
+  padding-right: 1em;
+  padding-left: 2em;
+  border-bottom: solid 2px #222;
+  height: 30px;
+}
+
+.nav-menu-nav {
+  display: flex;
+}
+
+.nav-menu-nav .li {
+  padding: 0 0.5rem;
+}
+
+.nav-menu-nav .li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline 0.2em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+
+.nav-menu-nav .li:hover {
+  color: white;
+  transition: all 0.2s ease;
+  text-decoration-color: white;
+}
+
+.pi {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline 0.2em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+  cursor: pointer;
+}
+
+.pi:hover {
+  color: white;
+  transition: all 0.2s ease;
+  text-decoration-color: white;
+}
+
+.hamburguer {
+  display: none;
+  z-index: 4;
+}
+
+/*{SUBMENU}*/
+
+.nav-menu-nav li .sub-menu {
+  display: none;
+}
+
+.nav-menu-nav li .children {
+  display: block;
+  margin-top: 20px;
+  background-color: rgba(241, 228, 228);
+  position: absolute;
+  width: 15%;
+  z-index: 1000;
+  border-top: 1px solid black;
+}
+
+.nav-menu-nav li .children li {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 8px;
+  font-size: 1rem;
+  color: black;
+}
+
+.nav-menu-nav li .children li:hover {
+  background-color: #333;
+  color: white;
+  font-weight: bolder;
+}
+
+/*{ICONOS}*/
+.material-icons {
+  font-family: "Material Icons";
+  margin-top: 2.2px;
+  float: right;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+@media screen and (max-width: 700px) {
+  .header-dos {
+    padding-left: 1em;
   }
-  
   .nav-menu-nav {
-    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 10rem;
+    width: 100%;
+    height: 100vh;
+    background: tan;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+    transition: 0.3s;
   }
-  
-  .nav-menu-nav .li {
-    padding: 0 0.5rem;
+
+  .nav-menu-nav.active {
+    left: 0;
   }
-  
+
   .nav-menu-nav .li {
+    padding: 1rem 1em;
     font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-    text-decoration: underline 0.2em rgba(255, 255, 255, 0);
-    transition: text-decoration-color 300ms;
+    border-bottom: 1px solid black;
   }
-  
-  .nav-menu-nav .li:hover {
-    color: white;
-    transition: all 0.2s ease;
-    text-decoration-color: white;
-  }
-  
+
   .pi {
+    padding: 1rem 1em;
     font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-    text-decoration: underline 0.2em rgba(255, 255, 255, 0);
-    transition: text-decoration-color 300ms;
-    cursor: pointer;
+    border-bottom: 1px solid black;
   }
-  
-  .pi:hover {
-    color: white;
-    transition: all 0.2s ease;
-    text-decoration-color: white;
-  }
-  
+
   .hamburguer {
-    display: none;
-    z-index: 4;
+    display: initial;
   }
-  
-  /*{SUBMENU}*/
-  
+
+  .cruz {
+    position: fixed;
+    font-size: 35px;
+    top: 3%;
+    right: 0;
+    cursor: pointer;
+    padding-right: 1rem;
+  }
+
   .nav-menu-nav li .sub-menu {
     display: none;
   }
-  
+
   .nav-menu-nav li .children {
     display: block;
-    margin-top: 20px;
-    background-color: rgba(241, 228, 228);
-    position: absolute;
-    width: 15%;
-    z-index: 1000;
-    border-top: 1px solid black;
+    background-color: rgb(180, 153, 118);
+    position: relative;
+    width: 100%;
+    border-top: none;
+    margin-top: 0px;
   }
-  
+
   .nav-menu-nav li .children li {
     display: block;
     overflow: hidden;
     border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 8px;
+    border-left: none;
+    border-right: none;
+    padding: 1rem 1em;
     font-size: 1rem;
-    color: black;
-  }
-  
-  .nav-menu-nav li .children li:hover {
-    background-color: #333;
     color: white;
-    font-weight: bolder;
   }
-  
-  /*{ICONOS}*/
+
   .material-icons {
     font-family: "Material Icons";
-    margin-top: 2.2px;
-    float: right;
+    margin-top: 1px;
     font-weight: normal;
     font-style: normal;
     font-size: 1.3rem;
@@ -100,89 +186,4 @@
     white-space: nowrap;
     direction: ltr;
   }
-  
-  
-  @media screen and (max-width: 700px) {
-    .nav-menu-nav {
-      flex-direction: column;
-      align-items: left;
-      padding-top: 10rem;
-      width: 100%;
-      height: 100vh;
-      background: tan;
-      position: fixed;
-      top: 0;
-      left: -100%;
-      z-index: 3;
-      transition: 0.3s;
-    }
-  
-    .nav-menu-nav.active {
-      left: 0;
-    }
-  
-    .nav-menu-nav .li {
-      padding: 1rem 1em;
-      font-size: 1.1rem;
-      border-bottom: 1px solid black;
-    }
-  
-    .pi {
-      padding: 1rem 1em;
-      font-size: 1.1rem;
-      border-bottom: 1px solid black;
-    }
-  
-    .hamburguer {
-      display: initial;
-    }
-  
-    .cruz {
-      position: fixed;
-      font-size: 35px;
-      top: 3%;
-      right: 0;
-      cursor: pointer;
-      padding-right: 1rem;
-    }
-  
-    .nav-menu-nav li .sub-menu {
-      display: none;
-    }
-  
-    .nav-menu-nav li .children {
-      display: block;
-      background-color: rgb(180, 153, 118);
-      position: relative;
-      width: 100%;
-      border-top: none;
-      margin-top: 0px;
-    }
-  
-    .nav-menu-nav li .children li {
-      display: block;
-      overflow: hidden;
-      border-bottom: 1px solid black;
-      border-left: none;
-      border-right: none;
-      padding: 1rem 1em;
-      font-size: 1rem;
-      color: white;
-    }
-  
-    .material-icons {
-      font-family: "Material Icons";
-      margin-top: 1px;
-      font-weight: normal;
-      font-style: normal;
-      font-size: 1.3rem;
-      line-height: 1;
-      text-transform: none;
-      letter-spacing: normal;
-      word-wrap: normal;
-      white-space: nowrap;
-      direction: ltr;
-    }
-    
-  }
-  
+}

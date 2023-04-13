@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import NavDos from "../components/NavDos";
 import HeadDos from "../components/HeadDos";
 import FootDos from "../components/FootDos";
-import Buscador from "../components/Buscador";
+import NavConBuscador from "../components/NavConBuscador";
 //Estilos
 import "../estilos/productosList.css";
 
@@ -29,7 +29,7 @@ const ProductosList = () => {
     <>
       <HeadDos />
       <NavDos />
-      <Buscador />
+      <NavConBuscador />
       <ul>
         <div className="card-container">
           {productos.map(function (e, i) {
