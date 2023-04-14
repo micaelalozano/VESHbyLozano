@@ -8,7 +8,7 @@ import NavConBuscador from "../components/NavConBuscador";
 //Estilos
 import "../estilos/productosList.css";
 
-const ProductosList = () => {
+const MenorPrecio = () => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -23,16 +23,13 @@ const ProductosList = () => {
       .catch();
   }, []);
 
-  //Ordenar propiedades por fecha.
+  //Ordenar propiedades por precio.
 
-  productos.sort(
-    (a, b) => new Date(a.createdAt).getTime() > new Date(b.createdAt).getTime()
-  );
-
-  console.log(productos);
+  productos.sort((a, b) => a.precio > b.precio);
 
   return (
     <>
+      {" "}
       <HeadDos />
       <NavDos />
       <NavConBuscador />
@@ -58,4 +55,4 @@ const ProductosList = () => {
   );
 };
 
-export default ProductosList;
+export default MenorPrecio;

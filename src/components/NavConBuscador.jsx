@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
+import SortIcon from "@mui/icons-material/Sort";
 //Estilos
 import "../estilos/navConBuscador.css";
 
 const NavConBuscador = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   return (
     <>
       <div className="contenedor-uno">
@@ -18,14 +23,22 @@ const NavConBuscador = () => {
           </button>
         </form>
 
-        <form >
-          
-          <select type="file" className="contenedor-filter">
-            <option>FILTRAR</option>
-            <option>Menor precio a mayor precio </option>
-            <option>Mayor precio a menor precio </option>
-          </select>
-        </form>
+        <div className="contenedor-filter">
+          <div className="h3-filter" onClick={handleClick}>
+            <p className="p-f">FILTRAR</p>
+            <SortIcon sx={{ fontSize: 15 }} style={{ color: "#5f5e5e" }} />
+          </div>
+          <ul className={click ? "filter-menu" : "filter"}>
+            <li className="li-dos">Mas nuevo al mas viejo</li>
+            <Link to="/productos=menor-a-mayor-precio">
+              <li className="li-dos">Menor precio a mayor precio</li>
+            </Link>
+
+            <Link to="/productos=mayor-a-menor-precio">
+              <li>Mayor precio a menor precio</li>
+            </Link>
+          </ul>
+        </div>
       </div>
     </>
   );

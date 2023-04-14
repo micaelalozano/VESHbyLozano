@@ -61,22 +61,30 @@
 
 .nav-menu-nav li .children {
   display: block;
-  margin-top: 20px;
-  background-color: rgba(241, 228, 228);
   position: absolute;
-  width: 15%;
-  z-index: 1000;
-  border-top: 1px solid black;
+  margin-top: 20px;
+  background-color: rgba(241, 228, 228, 0.74);
+  width: 100%;
+  max-width: 220px;
+  z-index: 10;
+  border: 1px solid black;
+  border-radius: 6px;
 }
 
 .nav-menu-nav li .children li {
   display: block;
   overflow: hidden;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
   padding: 8px;
-  font-size: 1rem;
+  font-size: 14px;
+  color: black;
+}
+
+.li-v {
+  display: block;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  padding: 8px;
+  font-size: 15px;
   color: black;
 }
 
@@ -157,19 +165,20 @@
     display: block;
     background-color: rgb(180, 153, 118);
     position: relative;
-    width: 100%;
-    border-top: none;
+    max-width: 100%;
+    border: none;
+    border-bottom: solid 1px black;
+    border-radius: 0px;
     margin-top: 0px;
   }
 
   .nav-menu-nav li .children li {
     display: block;
     overflow: hidden;
-    border-bottom: 1px solid black;
     border-left: none;
     border-right: none;
-    padding: 1rem 1em;
-    font-size: 1rem;
+    padding: 1rem 1.3em;
+    font-size: 15px;
     color: white;
   }
 
