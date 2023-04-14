@@ -8,7 +8,7 @@ import NavConBuscador from "../components/NavConBuscador";
 //Estilos
 import "../estilos/productosList.css";
 
-const ProductosList = () => {
+const MayorPrecio = () => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -23,13 +23,9 @@ const ProductosList = () => {
       .catch();
   }, []);
 
-  //Ordenar propiedades por fecha.
+  //Ordenar propiedades por precio.
 
-  productos.sort(
-    (a, b) => new Date(a.createdAt).getTime() > new Date(b.createdAt).getTime()
-  );
-
-  console.log(productos);
+  productos.sort((a, b) => b.precio > a.precio);
 
   return (
     <>
@@ -58,4 +54,4 @@ const ProductosList = () => {
   );
 };
 
-export default ProductosList;
+export default MayorPrecio;

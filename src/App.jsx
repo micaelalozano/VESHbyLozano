@@ -13,6 +13,8 @@ import VestidosList from "./pages/VestidosList";
 import Detalles from "./pages/Detalles";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
+import MayorPrecio from "./pages/MayorPrecio";
+import MenorPrecio from "./pages/MenorPrecio";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
         <Route exact path="/mis_favoritos" element={<Favoritos />} />
         <Route exact path="/mi_carrito" element={<Carrito />} />
         <Route exact path="/productos" element={<ProductosList />} />
+        <Route exact path="/productos=mayor-a-menor-precio" element={<MayorPrecio />} />
+        <Route exact path="/productos=menor-a-mayor-precio" element={<MenorPrecio />} />
         <Route exact path="/top_y_remeras" element={<TopList />} />
         <Route exact path="/sweaters" element={<SweaterList />} />
         <Route exact path="/pantalones" element={<PantalonesList />} />

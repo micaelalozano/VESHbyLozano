@@ -9,14 +9,12 @@ const HeroImg = () => {
       <div className="heading">
         <div className="content">
           <h1>Tienda Online de VESH</h1>
-          <div className="form">
             <form className="form">
-              <input type="search" placeholder="Escribe lo que buscas"  />
+              <input className="input-inicio" placeholder="Escribe lo que buscas"  />
               <button className="btn">
-                <SearchIcon className="icon-btn" />
+                <SearchIcon sx={{ fontSize: 20 }} style={{ color: "#a3a2a2" }}  />
               </button>
             </form>
-          </div>
         </div>
       </div>
     </div>

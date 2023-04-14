@@ -25,18 +25,18 @@ const Navbar = () => {
           <p className="p-2" onClick={handleClickDos}>
             Productos <span className="material-icons">expand_more</span>
           </p>
-          <ul className={clickDos ? "children" : "sub-menu"}>
+          <ul  className={clickDos ? "children" : "sub-menu"}>
             <Link to="/productos">
-              <li>Ver todos los productos</li>
+              <li className="li-v">Ver todos los productos</li>
             </Link>
             <Link to="/top_y_remeras">
-              <li>Tops/Remeras</li>
+              <li className="li-v">Tops/Remeras</li>
             </Link>
             <Link to="/sweaters">
-              <li>Sweaters</li>
+              <li className="li-v">Sweaters</li>
             </Link>
             <Link to="/pantalones">
-              <li>Pantalones</li>
+              <li className="li-v">Pantalones</li>
             </Link>
             <Link to="/vestidos">
               <li>Vestidos</li>
