@@ -74,7 +74,7 @@
   margin-right: 2em;
   background-color: rgba(241, 228, 228, 0.74);
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   border: solid black 1px;
   border-radius: 5px;
 }
