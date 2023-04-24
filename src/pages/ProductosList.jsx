@@ -5,11 +5,13 @@ import NavDos from "../components/NavDos";
 import HeadDos from "../components/HeadDos";
 import FootDos from "../components/FootDos";
 import NavConBuscador from "../components/NavConBuscador";
+import { Spinner } from "../components/Spinner";
 //Estilos
 import "../estilos/productosList.css";
 
 const ProductosList = () => {
   const [productos, setProductos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     axios
@@ -19,6 +21,7 @@ const ProductosList = () => {
       .then((res) => res.data)
       .then((productos) => {
         setProductos(productos);
+        setIsLoading(false);
       })
       .catch();
   }, []);
@@ -30,6 +33,10 @@ const ProductosList = () => {
   );
 
   console.log(productos);
+
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   return (
     <>
