@@ -29,7 +29,9 @@ const NavConBuscador = () => {
             <SortIcon sx={{ fontSize: 15 }} style={{ color: "#5f5e5e" }} />
           </div>
           <ul className={click ? "filter-menu" : "filter"}>
+            <Link to="/productos">
             <li className="li-dos">Más nuevo al más viejo</li>
+            </Link>
             <Link to="/productos=menor-a-mayor-precio">
               <li className="li-dos">Precio: Menor a mayor</li>
             </Link>
